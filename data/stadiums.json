@@ -1,0 +1,83 @@
+{
+    "stadiums": [
+        {
+            "id": "std_101",
+            "name": "Wankhede Stadium",
+            "location": "Mumbai, India",
+            "total_seats": 33108,
+            "infrastructure": [
+                {
+                    "id": "gate_1",
+                    "name": "Gate 1 (Vinoo Mankad)",
+                    "type": "gate",
+                    "nearby_blocks": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                },
+                {
+                    "id": "gate_4",
+                    "name": "Gate 4 (University Pavilion)",
+                    "type": "gate",
+                    "nearby_blocks": [
+                        "D",
+                        "E",
+                        "F"
+                    ]
+                },
+                {
+                    "id": "food_mumbai",
+                    "name": "Mumbai Street Food Express",
+                    "type": "food",
+                    "nearby_blocks": [
+                        "A",
+                        "B",
+                        "D"
+                    ]
+                },
+                {
+                    "id": "wash_north",
+                    "name": "Washroom Block North",
+                    "type": "washroom",
+                    "nearby_blocks": [
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "std_1e2be399",
+            "name": "Chinnaswamy",
+            "location": "Bangalore, India",
+            "total_seats": 100000,
+            "infrastructure": [
+                {
+                    "id": "gate_8bdffe",
+                    "name": "Gate 1",
+                    "type": "gate",
+                    "nearby_blocks": [
+                        "FOOD STALL A"
+                    ]
+                },
+                {
+                    "id": "food_a5c75b",
+                    "name": "Food Stall A",
+                    "type": "food",
+                    "nearby_blocks": [
+                        "WASHROOM 1"
+                    ]
+                },
+                {
+                    "id": "gate_d2e97f",
+                    "name": "Gate 2",
+                    "type": "gate",
+                    "nearby_blocks": [
+                        "FOOD STALL A"
+                    ]
+                }
+            ]
+        }
+    ]
+}
