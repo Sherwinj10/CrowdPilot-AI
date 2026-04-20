@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function FanExperience() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
   
   const [ticketState, setTicketState] = useState("input");
   const [stadiums, setStadiums] = useState<any[]>([]);

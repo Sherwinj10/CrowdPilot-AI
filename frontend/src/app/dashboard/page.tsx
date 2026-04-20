@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function AdminDashboard() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [passcode, setPasscode] = useState("");
