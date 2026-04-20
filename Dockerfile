@@ -1,5 +1,5 @@
 # Stage 1: Build Front End
-FROM node:18-alpine AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY frontend/package*.json ./frontend/
 RUN cd frontend && npm install
