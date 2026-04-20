@@ -209,11 +209,11 @@ from fastapi.responses import FileResponse
 
 frontend_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend", "out")
 if os.path.exists(frontend_path):
-    @app.get("/")
+    @app.api_route("/", methods=["GET", "HEAD"])
     def read_root():
         return FileResponse(os.path.join(frontend_path, "index.html"))
         
-    @app.get("/{full_path:path}")
+    @app.api_route("/{full_path:path}", methods=["GET", "HEAD"])
     def serve_frontend(full_path: str):
         file_path = os.path.join(frontend_path, full_path)
         html_path = os.path.join(frontend_path, f"{full_path}.html")

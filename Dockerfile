@@ -16,6 +16,9 @@ RUN pip install --no-cache-dir -r backend/requirements.txt
 COPY backend/ ./backend/
 COPY data/ ./data/
 
+# Hugging Face runs containers as User 1000. Grant write permissions to the data folder!
+RUN chmod -R 777 /app/data
+
 # Copy the pre-compiled Next.js raw HTML
 COPY --from=builder /app/frontend/out ./frontend/out
 
